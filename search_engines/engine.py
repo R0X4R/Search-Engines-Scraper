@@ -166,8 +166,8 @@ class SearchEngine(object):
                 items = self._filter_results(tags)
                 self._collect_results(items)
                 
-                msg = 'page: {:<8} links: {}'.format(page, len(self.results))
-                out.console(msg, end='')
+                #msg = 'page: {:<8} links: {}'.format(page, len(self.results))
+                #out.console(msg, end='')
                 request = self._next_page(tags)
 
                 if not request['url']:
